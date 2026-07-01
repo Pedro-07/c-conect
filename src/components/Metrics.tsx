@@ -36,10 +36,10 @@ export default function Metrics() {
       },
     });
 
-    // Animação 2: +15.000
+    // Animação 2: +5.000
     const t2 = { val: 0 };
     const a2 = gsap.to(t2, {
-      val: 15000,
+      val: 5000,
       duration: 2.2,
       ease: 'power2.out',
       scrollTrigger: {

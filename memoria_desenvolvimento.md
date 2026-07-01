@@ -47,7 +47,7 @@ Adotou-se uma estética limpa, com contrastes bem definidos e apelo tecnológico
 - **`src/components/Hero.tsx`**: O lado esquerdo apresenta a headline bicolor e os botões de ação rápida. O lado direito exibe um mockup em SVG composto por um "Hub Central" que representa a Cconect e quatro nós representando os principais usos (Streaming 4K, Reuniões em Vídeo, Download Ultra e Games). Feixes de luz animados em SVG (`<animateMotion>`) correm continuamente pelas linhas de fibra óptica simbolizando o tráfego veloz de dados.
 
 ### D. Métricas Dinâmicas (GSAP)
-- **`src/components/Metrics.tsx`**: Exibe dados de qualidade da empresa. A contagem numérica de 0 até o valor final (`99,8%`, `+15.000`, `100%` e `24/7`) é gerenciada pelo GSAP interpolando um objeto de estado e atualizando o `innerText` via referência de DOM (`useRef`), garantindo performance de 60fps sem renderizações desnecessárias do React.
+- **`src/components/Metrics.tsx`**: Exibe dados de qualidade da empresa. A contagem numérica de 0 até o valor final (`99,8%`, `+5.000`, `100%` e `24/7`) é gerenciada pelo GSAP interpolando um objeto de estado e atualizando o `innerText` via referência de DOM (`useRef`), garantindo performance de 60fps sem renderizações desnecessárias do React.
 
 ### E. Benefícios & Arena Cconect
 - **`src/components/Benefits.tsx`**: Exibe 4 cards responsivos que ativam efeitos de luz interna ao passar o mouse. Abaixo do grid de benefícios principais, é integrado um banner exclusivo sobre a **Arena Cconect** (espaço de eSports parceiro oficial do provedor em Chapadinha) promovendo descontos e vantagens para assinantes com o CTA linkado ao Instagram oficial.
@@ -57,7 +57,7 @@ Adotou-se uma estética limpa, com contrastes bem definidos e apelo tecnológico
   - O usuário digita o CEP ou Povoado.
   - O script faz a limpeza de strings (normalização de acentos, remoção de caracteres especiais e conversão para caixa baixa).
   - Se for um CEP de Chapadinha (iniciando em `655`), aprova automaticamente.
-  - Se for um povoado, busca por correspondência de substring em mais de 30 povoados oficiais mapeados a partir de `cconect.md` (ex: *São Joaquim, Boa Hora, Cajazeiras, Santaninha*).
+  - Se for um povoado, busca por correspondência de substring em mais de 80 povoados oficiais mapeados a partir de `cconect.md` (ex: *SÃO JOAQUIM, BOA HORA, CAJAZEIRAS, SANTA ANINHA*).
   - Retorna um card de sucesso ou aviso. Se disponível, oferece o botão com link do WhatsApp pré-formatado com o nome do povoado do cliente para contratação.
   - Contém um mapa conceitual de nós interconectados em SVG e um botão para exibir todos os povoados atendidos em formato de grade expansível.
 

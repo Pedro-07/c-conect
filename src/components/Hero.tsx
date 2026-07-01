@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Video, Download, Gamepad2, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   const containerVariants = {
@@ -155,18 +156,26 @@ export default function Hero() {
           </svg>
 
           {/* Central Hub (Cconect) */}
-          <div className="relative z-10 w-24 h-24 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center shadow-2xl">
+          <div className="relative z-10 w-36 h-36 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center shadow-2xl">
             <div className="absolute inset-0 rounded-full bg-cyan-400/20 animate-ping pointer-events-none" />
+            
+            {/* Anel Tracejado Rotativo */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-              className="text-white flex items-center justify-center"
-            >
-              <div className="w-12 h-12 relative">
-                <div className="absolute inset-0 border-2 border-dashed border-white/30 rounded-full" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-cyan-300 font-extrabold text-lg">C</div>
-              </div>
-            </motion.div>
+              className="absolute inset-3 border border-dashed border-cyan-400/30 rounded-full pointer-events-none"
+            />
+
+            {/* Logo Centralizada e Legível */}
+            <div className="w-28 h-14 relative z-10">
+              <Image
+                src="/logosemfundo.png"
+                alt="Cconect Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
 
           {/* Node 1: Netflix 4K (Top-Left) */}

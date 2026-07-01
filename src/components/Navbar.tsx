@@ -32,14 +32,14 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-md border-b border-black/5 shadow-sm py-4'
-          : 'bg-transparent py-6'
+          ? 'bg-white/80 backdrop-blur-md border-b border-black/5 shadow-sm py-2'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className={`relative h-10 w-32 md:w-36 transition-transform duration-300 group-hover:scale-105 ${isScrolled ? '' : 'brightness-0 invert'}`}>
+          <div className={`relative h-[72px] w-[234px] md:w-[260px] transition-transform duration-300 group-hover:scale-105 ${isScrolled ? '' : 'brightness-0 invert'}`}>
             <Image
               src="/logosemfundo.png"
               alt="Cconect Logo"
@@ -97,7 +97,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 top-[72px] md:hidden bg-white z-40 flex flex-col px-6 py-8 gap-6 border-t border-black/5 transition-all duration-300 ${
+        className={`fixed inset-0 top-[88px] md:hidden bg-white z-40 flex flex-col px-6 py-8 gap-6 border-t border-black/5 transition-all duration-300 ${
           isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
         }`}
       >

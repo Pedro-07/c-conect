@@ -51,10 +51,10 @@
 
 ## Cobertura
 
-Nossa cobertura atende **mais de 40 Povoados** em Chapadinha e região — Maranhão.
+Nossa cobertura atende **mais de 80 Povoados** em Chapadinha e região — Maranhão.
 
 ### Localidades atendidas (lista identificada):
-Povoado São Joaquim, Povoado Cajazeiras, Povoado Madeira Cortada, Povoado Boa Hora, Povoado São Domingos, Riacho da Mata, Povoado Morro Vermelho, Povoado Riacho, Canto Ferreira, Santaninha, Povoado Sapuaia, Centro do Buraco, Malhado do Meio, Povoado Laíola, Povoado Pai João, Povoado Cruz Velha, Povoado João Inácio, Povoado Uaurana, Povoado Folha Larga, Povoado Mucambinha, Barroca da Vaca, Povoado Curralhino, Boca da Mata dos Cardoso, Povoado Riacho Fundo, Povoado Pé do Morro, Povoado Ritirane, Malhadas dos Franceses, Povoado Poças, Alto-Alegre, Buquerão.
+ABERLADOS, ALTO DA MAÇARANDUBA, ALTO-ALEGRE, ANAJÁ, ANGICO, ARAÇAR, ARMAZÉM, BACABALZINHO, BAIXAO, BALCEIRO, BARRIGUDA, BARROCA DA VACA, BARROCAO, BELA VISTA, BOA ESPERANÇA, BOA HORA, BOCA DA MATA DOS CARDOSO, BOCA DA MATA DOS LONGUIN, BOI PRETO, BOM JESUS, BUQUERÃO, CAJAZEIRA DOS DOUROS, CAJAZEIRAS, CAMPESTRE, CAMPOS NOVOS, CANTO DO ARAÇAR, CANTO DOS BOI, CANTO FERREIRA, CAPINAL II, CAPITAL I, CARAMICA, CENTRO DO BURACO, CENTRÃO, COCAL, CRUZ VELHA, CURRALINHO, ESTRELA II, FAVEIRA, FELICIANA, FOLHA LARGA, GUABIRABA, JOÃO INÁCIO, LIMÃO, LOIOLA, MACAJUBA, MACAJUBA DOS LEITES, MACAMBEIRA, MADEIRA CORTADA, MALHADA DO MEIO, MALHADA DOS FRANCESES, MORRO VERMELHO, MUCAMBIRA, OLHO D’ÁGUA SECO, PAI JOÃO, PATAQUEIRA, PAU DARCO, PÉ DO MORRO, PINTOBEIRA DOS LEITES, PIRA, POCOVAL, POÇOS, POÇOS DANTAS, QUEIMADAS, RETIRANA, RETIRO DOS OLIVERAS, RIACHO, RIACHO DA MATA, RIACHO FUNDO, RIACHÃO, ROCINHA, SANTA ANINHA, SANTA CLARA, SANTA RITA, SANTA ROSA, SAPUCAIA, SOLEDADE, SÃO DOMINGOS, SÃO JOAQUIM, SÃO PEDRO, TABOCA, TABULEIRAO, TAMBURI, TINGUINS, UCURANA, VAREDA GRANDE, VERDE, VILA PANDOCA, VILA UNIÃO.
 
 ---
 
@@ -80,7 +80,7 @@ Povoado São Joaquim, Povoado Cajazeiras, Povoado Madeira Cortada, Povoado Boa H
 | Highlight     | Conteúdo                                              |
 |---------------|-------------------------------------------------------|
 | Benefícios    | Benefícios exclusivos na Arena Cconect para clientes  |
-| Cobertura     | Mapa com +40 povoados atendidos em Chapadinha/MA      |
+| Cobertura     | Mapa com +80 povoados atendidos em Chapadinha/MA      |
 | Fale Conosco  | Planos exclusivos, canais de contato                  |
 | PLANOS        | Tabela de planos com preços e inclusões               |
 

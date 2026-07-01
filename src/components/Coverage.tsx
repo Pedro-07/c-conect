@@ -6,16 +6,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // Lista de povoados atendidos mapeados a partir de cconect.md
 const povoados = [
-  'Povoado São Joaquim', 'Povoado Cajazeiras', 'Povoado Madeira Cortada', 
-  'Povoado Boa Hora', 'Povoado São Domingos', 'Riacho da Mata', 
-  'Povoado Morro Vermelho', 'Povoado Riacho', 'Canto Ferreira', 
-  'Santaninha', 'Povoado Sapuaia', 'Centro do Buraco', 
-  'Malhado do Meio', 'Povoado Laíola', 'Povoado Pai João', 
-  'Povoado Cruz Velha', 'Povoado João Inácio', 'Povoado Uaurana', 
-  'Povoado Folha Larga', 'Povoado Mucambinha', 'Barroca da Vaca', 
-  'Povoado Curralhino', 'Boca da Mata dos Cardoso', 'Povoado Riacho Fundo', 
-  'Povoado Pé do Morro', 'Povoado Ritirane', 'Malhadas dos Franceses', 
-  'Povoado Poças', 'Alto-Alegre', 'Buquerão'
+  'ABERLADOS', 'ALTO DA MAÇARANDUBA', 'ALTO-ALEGRE', 'ANAJÁ', 'ANGICO',
+  'ARAÇAR', 'ARMAZÉM', 'BACABALZINHO', 'BAIXAO', 'BALCEIRO',
+  'BARRIGUDA', 'BARROCA DA VACA', 'BARROCAO', 'BELA VISTA', 'BOA ESPERANÇA',
+  'BOA HORA', 'BOCA DA MATA DOS CARDOSO', 'BOCA DA MATA DOS LONGUIN', 'BOI PRETO', 'BOM JESUS',
+  'BUQUERÃO', 'CAJAZEIRA DOS DOUROS', 'CAJAZEIRAS', 'CAMPESTRE', 'CAMPOS NOVOS',
+  'CANTO DO ARAÇAR', 'CANTO DOS BOI', 'CANTO FERREIRA', 'CAPINAL II', 'CAPITAL I',
+  'CARAMICA', 'CENTRO DO BURACO', 'CENTRÃO', 'COCAL', 'CRUZ VELHA',
+  'CURRALINHO', 'ESTRELA II', 'FAVEIRA', 'FELICIANA', 'FOLHA LARGA',
+  'GUABIRABA', 'JOÃO INÁCIO', 'LIMÃO', 'LOIOLA', 'MACAJUBA',
+  'MACAJUBA DOS LEITES', 'MACAMBEIRA', 'MADEIRA CORTADA', 'MALHADA DO MEIO', 'MALHADA DOS FRANCESES',
+  'MORRO VERMELHO', 'MUCAMBIRA', 'OLHO D’ÁGUA SECO', 'PAI JOÃO', 'PATAQUEIRA',
+  'PAU DARCO', 'PÉ DO MORRO', 'PINTOBEIRA DOS LEITES', 'PIRA', 'POCOVAL',
+  'POÇOS', 'POÇOS DANTAS', 'QUEIMADAS', 'RETIRANA', 'RETIRO DOS OLIVERAS',
+  'RIACHO', 'RIACHO DA MATA', 'RIACHO FUNDO', 'RIACHÃO', 'ROCINHA',
+  'SANTA ANINHA', 'SANTA CLARA', 'SANTA RITA', 'SANTA ROSA', 'SAPUCAIA',
+  'SOLEDADE', 'SÃO DOMINGOS', 'SÃO JOAQUIM', 'SÃO PEDRO', 'TABOCA',
+  'TABULEIRAO', 'TAMBURI', 'TINGUINS', 'UCURANA', 'VAREDA GRANDE',
+  'VERDE', 'VILA PANDOCA', 'VILA UNIÃO'
 ];
 
 export default function Coverage() {
@@ -70,16 +78,16 @@ export default function Coverage() {
 
   // Coordenadas conceituais para os nós do mapa interativo
   const mapNodes = [
-    { name: 'Povoado São Joaquim', x: '25%', y: '20%' },
-    { name: 'Povoado Cajazeiras', x: '45%', y: '15%' },
-    { name: 'Povoado Boa Hora', x: '70%', y: '25%' },
-    { name: 'Povoado São Domingos', x: '15%', y: '45%' },
-    { name: 'Santaninha', x: '35%', y: '50%' },
-    { name: 'Povoado Sapuaia', x: '60%', y: '40%' },
-    { name: 'Povoado Laíola', x: '80%', y: '55%' },
-    { name: 'Povoado Uaurana', x: '20%', y: '75%' },
-    { name: 'Povoado Poças', x: '50%', y: '80%' },
-    { name: 'Buquerão', x: '75%', y: '75%' },
+    { name: 'SÃO JOAQUIM', x: '25%', y: '20%' },
+    { name: 'CAJAZEIRAS', x: '45%', y: '15%' },
+    { name: 'BOA HORA', x: '70%', y: '25%' },
+    { name: 'SÃO DOMINGOS', x: '15%', y: '45%' },
+    { name: 'SANTA ANINHA', x: '35%', y: '50%' },
+    { name: 'SAPUCAIA', x: '60%', y: '40%' },
+    { name: 'LOIOLA', x: '80%', y: '55%' },
+    { name: 'UCURANA', x: '20%', y: '75%' },
+    { name: 'POÇOS', x: '50%', y: '80%' },
+    { name: 'BUQUERÃO', x: '75%', y: '75%' },
   ];
 
   return (
@@ -97,7 +105,7 @@ export default function Coverage() {
             Consulte disponibilidade na sua região
           </h2>
           <p className="text-white/70 text-sm sm:text-base leading-relaxed mb-8">
-            Atendemos a sede urbana de Chapadinha/MA e mais de 40 povoados da região com conexão 100% fibra óptica estável e rápida. Digite seu CEP ou localidade para verificar.
+            Atendemos a sede urbana de Chapadinha/MA e mais de 80 povoados da região com conexão 100% fibra óptica estável e rápida. Digite seu CEP ou localidade para verificar.
           </p>
 
           <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 w-full max-w-xl mb-6">
@@ -183,7 +191,7 @@ export default function Coverage() {
               </>
             ) : (
               <>
-                <Eye size={16} /> Ver todos os povoados atendidos (+40)
+                <Eye size={16} /> Ver todos os povoados atendidos (+80)
               </>
             )}
           </button>

@@ -14,7 +14,7 @@ export default function Testimonials() {
     },
     {
       name: 'Beatriz Costa',
-      location: 'Povoado São Joaquim',
+      location: 'SÃO JOAQUIM',
       initials: 'BC',
       review: 'O sinal de fibra óptica chega perfeito no povoado. Consigo assistir minhas séries em 4K e os meus filhos jogam online sem lags ou quedas. O atendimento de suporte é muito prestativo.',
       stars: 5,
