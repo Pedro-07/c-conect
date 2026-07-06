@@ -50,7 +50,7 @@ Adotou-se uma estética limpa, com contrastes bem definidos e apelo tecnológico
 - **`src/components/Metrics.tsx`**: Exibe dados de qualidade da empresa. A contagem numérica de 0 até o valor final (`99,8%`, `+5.000`, `100%` e `24/7`) é gerenciada pelo GSAP interpolando um objeto de estado e atualizando o `innerText` via referência de DOM (`useRef`), garantindo performance de 60fps sem renderizações desnecessárias do React.
 
 ### E. Benefícios & Arena Cconect
-- **`src/components/Benefits.tsx`**: Exibe 4 cards responsivos que ativam efeitos de luz interna ao passar o mouse. Abaixo do grid de benefícios principais, é integrado um banner exclusivo sobre a **Arena Cconect** (espaço de eSports parceiro oficial do provedor em Chapadinha) promovendo descontos e vantagens para assinantes com o CTA linkado ao Instagram oficial.
+- **`src/components/Benefits.tsx`**: Exibe 4 cards responsivos que ativam efeitos de luz interna ao passar o mouse. Abaixo do grid de benefícios principais, é integrado um banner exclusivo sobre a **Arena Cconect** (espaço de eSports parceiro oficial do provedor em Chapadinha) promovendo descontos e vantagens para assinantes com o CTA direcionando para a nova rota interna da Arena.
 
 ### F. Motor de Busca de Cobertura
 - **`src/components/Coverage.tsx`**: Seção desenvolvida para converter leads que têm dúvidas sobre disponibilidade física:
@@ -69,6 +69,9 @@ Adotou-se uma estética limpa, com contrastes bem definidos e apelo tecnológico
 
 ### I. CTA Final & Footer Institucional
 - **`src/components/Footer.tsx`**: O banner de fechamento estimula a conversão com um grande círculo luminoso em gradiente radial ao fundo. O rodapé traz todas as informações oficiais exigidas (endereço físico em Chapadinha, telefones oficiais, links rápidos e links de redes sociais do provedor e da Arena).
+
+### J. Página da Arena Cconect (Lazer, Esportes e Eventos)
+- **`src/app/arena/page.tsx`**: Rota dedicada que apresenta a infraestrutura física da Arena (Arena de Areia Premium, Campo de Futebol Society e Área Gourmet & Eventos). Integra o **vídeo oficial da Arena** (`video1.mp4`) rodando em autoplay e loop no Hero em um container de proporção vertical (9:16), **imagens reais** (`arena1.jpeg` a `arena3.jpeg`) no topo de cada card de espaço e uma **Galeria de Fotos Bento Grid** (`arena4.jpeg` a `arena8.jpeg`) totalmente responsiva com efeitos hover dinâmicos (e carrossel mobile com indicadores do tipo Instagram). Traz visual dinâmico com tema escuro e neon esmeralda, e animações fluidas via Framer Motion, finalizando com uma seção de contato e localização centralizada contendo link direto para a rota do complexo no Google Maps.
 
 ---
 
@@ -125,6 +128,8 @@ d:\git\c-conect\
 │   └── favicon.ico
 ├── src/
 │   ├── app/
+│   │   ├── arena/
+│   │   │   └── page.tsx     # Página da Arena Cconect (lazer, esporte e vantagens do assinante)
 │   │   ├── globals.css      # Configuração do Tailwind v4 e variáveis de cores/fontes
 │   │   ├── layout.tsx       # Configuração de SEO, fontes Plus Jakarta / Instrument e Smooth Scroll
 │   │   └── page.tsx         # Página principal com a junção ordenada das seções

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
@@ -22,10 +23,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'Benefícios', href: '#beneficios' },
-    { label: 'Cobertura', href: '#cobertura' },
-    { label: 'Planos', href: '#planos' },
-    { label: 'Depoimentos', href: '#depoimentos' },
+    { label: 'Benefícios', href: '/#beneficios' },
+    { label: 'Cobertura', href: '/#cobertura' },
+    { label: 'Planos', href: '/#planos' },
+    { label: 'Depoimentos', href: '/#depoimentos' },
+    { label: 'Arena Cconect', href: '/arena' },
   ];
 
   return (
@@ -38,7 +40,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <div className={`relative h-[72px] w-[234px] md:w-[260px] transition-transform duration-300 group-hover:scale-105 ${isScrolled ? '' : 'brightness-0 invert'}`}>
             <Image
               src="/logosemfundo.png"
@@ -48,12 +50,12 @@ export default function Navbar() {
               priority
             />
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className={`text-sm font-medium transition-colors duration-200 ${
@@ -63,14 +65,14 @@ export default function Navbar() {
               }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <a
-            href="#cobertura"
+          <Link
+            href="/#cobertura"
             className={`px-6 py-2.5 rounded-full text-xs font-semibold tracking-wide uppercase transition-all duration-300 ${
               isScrolled
                 ? 'bg-primary text-white hover:bg-primary/95 shadow-md shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5'
@@ -78,7 +80,7 @@ export default function Navbar() {
             }`}
           >
             Consultar disponibilidade
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -103,23 +105,23 @@ export default function Navbar() {
       >
         <nav className="flex flex-col gap-5">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-lg font-semibold text-text-main hover:text-primary transition-colors border-b border-black/5 pb-2"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
-        <a
-          href="#cobertura"
+        <Link
+          href="/#cobertura"
           onClick={() => setIsMobileMenuOpen(false)}
           className="w-full text-center py-3 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/15"
         >
           Consultar disponibilidade
-        </a>
+        </Link>
       </div>
     </header>
   );

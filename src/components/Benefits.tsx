@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Zap, Tv, Home, Shield, ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Benefits() {
   const cards = [
@@ -136,15 +137,13 @@ export default function Benefits() {
           </div>
 
           <div className="relative z-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full md:w-auto shrink-0">
-            <a
-              href="https://www.instagram.com/arenacconect/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/arena"
               className="px-6 py-4 bg-white text-primary font-bold rounded-full text-center flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors shadow-md group"
             >
               Conhecer a Arena Cconect
               <ArrowUpRight size={18} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </Link>
             <a
               href="#planos"
               className="px-6 py-4 bg-white/10 border border-white/20 text-white font-bold rounded-full text-center hover:bg-white/15 transition-colors"

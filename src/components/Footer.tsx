@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Phone, MessageSquare, MapPin, ArrowRight, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -100,10 +101,11 @@ export default function Footer() {
           <div className="md:col-span-2 flex flex-col items-start text-left">
             <h4 className="text-xs font-bold tracking-wider uppercase text-white mb-4">Navegação</h4>
             <div className="flex flex-col gap-3">
-              <a href="#beneficios" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Benefícios</a>
-              <a href="#cobertura" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Cobertura</a>
-              <a href="#planos" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Planos</a>
-              <a href="#depoimentos" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Depoimentos</a>
+              <Link href="/#beneficios" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Benefícios</Link>
+              <Link href="/#cobertura" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Cobertura</Link>
+              <Link href="/#planos" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Planos</Link>
+              <Link href="/#depoimentos" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Depoimentos</Link>
+              <Link href="/arena" className="hover:text-cyan-300 transition-colors text-xs sm:text-sm">Arena Cconect</Link>
             </div>
           </div>
 
